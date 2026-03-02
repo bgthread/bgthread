@@ -1,0 +1,5 @@
+{% if site.posts.size > 0 %}
+  {% for post in site.posts %}
+    <div>{{ post.date | date: site.theme_config.date_format }} &mdash; <a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,19 @@
+{% for item in include.collection %}
+  {% if item.title and item.title != "" %}
+    <p>
+      {% if item.url %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      {% else %}
+        {{ item.title }}
+      {% endif %}
+    </p>
+  {% endif %}
+
+  {% if item.post_list == true %}
+    {% include post_list.html %}
+  {% endif %}
+
+  {% if item.entries %}
+    {% include menu_item.html collection=item.entries %}
+  {% endif %}
+{% endfor %}

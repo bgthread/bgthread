@@ -1,0 +1,17 @@
+title: bgthread
+description: thoughts on software engineering
+baseurl: ""
+url: "https://bgthread.github.io"
+
+permalink: /:title/
+
+theme: no-style-please
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+theme_config:
+  back_home_text: ".."
+  date_format: "%B %Y"
+  show_description: true
+  appearance: auto  # light, dark, or auto
